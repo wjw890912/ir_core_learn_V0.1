@@ -1,0 +1,9 @@
+.\obj\gpio.o: ..\GPIO\GPIO.c
+.\obj\gpio.o: ..\Include\DrvGPIO.h
+.\obj\gpio.o: ..\Include\M051Series.h
+.\obj\gpio.o: ..\CMSIS\CM0\CoreSupport\core_cm0.h
+.\obj\gpio.o: C:\Keil\ARM\RV31\INC\stdint.h
+.\obj\gpio.o: ..\CMSIS\CM0\DeviceSupport\Nuvoton\M051Series\system_M051Series.h
+.\obj\gpio.o: ..\Include\SysInfra.h
+.\obj\gpio.o: ..\Include\ModuleID.h
+.\obj\gpio.o: ..\GPIO\GPIO.h

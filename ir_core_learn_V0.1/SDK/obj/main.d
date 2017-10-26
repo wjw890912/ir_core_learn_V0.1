@@ -1,0 +1,17 @@
+.\obj\main.o: ..\MAIN\main.c
+.\obj\main.o: ..\CMSIS\CM0\DeviceSupport\Nuvoton\M051Series\M051Series.h
+.\obj\main.o: ..\CMSIS\CM0\CoreSupport\core_cm0.h
+.\obj\main.o: C:\Keil\ARM\RV31\INC\stdint.h
+.\obj\main.o: ..\CMSIS\CM0\DeviceSupport\Nuvoton\M051Series\system_M051Series.h
+.\obj\main.o: ..\Include\SysInfra.h
+.\obj\main.o: ..\Include\ModuleID.h
+.\obj\main.o: ..\Include\DrvSYS.h
+.\obj\main.o: ..\Include\M051Series.h
+.\obj\main.o: ..\Include\DrvGPIO.h
+.\obj\main.o: ..\MAIN\main.h
+.\obj\main.o: ..\GPIO\GPIO.h
+.\obj\main.o: ..\Include\DrvTIMER.h
+.\obj\main.o: ..\Include\DrvPWM.h
+.\obj\main.o: ..\∫ÏÕ‚\ir.h
+.\obj\main.o: ..\∫ÏÕ‚\Flash_Memory.h
+.\obj\main.o: ..\FMC\FMC.h

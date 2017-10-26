@@ -1,0 +1,975 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html><head>
+<title>Static Call Graph - [.\obj\IR_RAW.axf]</title></head>
+<body><HR>
+<H1>Static Call Graph for image .\obj\IR_RAW.axf</H1><HR>
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, RVCT4.0 [Build 728]: Last Updated: Thu Oct 26 10:26:52 2017
+<BR><P>
+<H3>Maximum Stack Usage =        180 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
+Call chain for Maximum Stack Depth:</H3>
+main &rArr; RecvCmdFromSI4432 &rArr; Send_IrCodeFlash &rArr; initTMR0 &rArr; DrvTIMER_Open &rArr; GetTimerClock &rArr; DrvSYS_GetHCLKFreq &rArr; DrvSYS_GetPLLClockFreq &rArr; __aeabi_uidivmod
+<P>
+<H3>
+Mutually Recursive functions
+</H3> <LI><a href="#[25e91bc]">NMI_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[25e91bc]">NMI_Handler</a><BR>
+ <LI><a href="#[25e9180]">HardFault_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[25e9180]">HardFault_Handler</a><BR>
+ <LI><a href="#[25e9144]">SVC_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[25e9144]">SVC_Handler</a><BR>
+ <LI><a href="#[25e9108]">PendSV_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[25e9108]">PendSV_Handler</a><BR>
+ <LI><a href="#[25e90cc]">SysTick_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[25e90cc]">SysTick_Handler</a><BR>
+ <LI><a href="#[25e9360]">Default_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[25e9360]">Default_Handler</a><BR>
+</UL>
+<P>
+<H3>
+Function Pointers
+</H3><UL>
+ <LI><a href="#[25e91f8]">Reset_Handler</a>
+ <LI><a href="#[25e91bc]">NMI_Handler</a>
+ <LI><a href="#[25e9180]">HardFault_Handler</a>
+ <LI><a href="#[25e9144]">SVC_Handler</a>
+ <LI><a href="#[25e9108]">PendSV_Handler</a>
+ <LI><a href="#[25e90cc]">SysTick_Handler</a>
+ <LI><a href="#[256f1e0]">BOD_IRQHandler</a>
+ <LI><a href="#[25edcbc]">WDT_IRQHandler</a>
+ <LI><a href="#[1d85880]">EINT0_IRQHandler</a>
+ <LI><a href="#[1d85844]">EINT1_IRQHandler</a>
+ <LI><a href="#[1d85808]">GPIOP0P1_IRQHandler</a>
+ <LI><a href="#[1d857cc]">GPIOP2P3P4_IRQHandler</a>
+ <LI><a href="#[2577fe8]">PWMA_IRQHandler</a>
+ <LI><a href="#[2577fac]">PWMB_IRQHandler</a>
+ <LI><a href="#[25eddac]">TMR0_IRQHandler</a>
+ <LI><a href="#[25edd70]">TMR1_IRQHandler</a>
+ <LI><a href="#[25edd34]">TMR2_IRQHandler</a>
+ <LI><a href="#[25edcf8]">TMR3_IRQHandler</a>
+ <LI><a href="#[25eb598]">UART0_IRQHandler</a>
+ <LI><a href="#[25eb55c]">UART1_IRQHandler</a>
+ <LI><a href="#[25734ac]">SPI0_IRQHandler</a>
+ <LI><a href="#[2573470]">SPI1_IRQHandler</a>
+ <LI><a href="#[25e8dc0]">SPI2_IRQHandler</a>
+ <LI><a href="#[25e8d84]">SPI3_IRQHandler</a>
+ <LI><a href="#[1d830e4]">I2C_IRQHandler</a>
+ <LI><a href="#[25e9360]">Default_Handler</a>
+ <LI><a href="#[25e9360]">Default_Handler</a>
+ <LI><a href="#[25e9360]">Default_Handler</a>
+ <LI><a href="#[25e9360]">Default_Handler</a>
+ <LI><a href="#[25e9360]">Default_Handler</a>
+ <LI><a href="#[25e9360]">Default_Handler</a>
+ <LI><a href="#[25e9360]">Default_Handler</a>
+ <LI><a href="#[25e9360]">Default_Handler</a>
+ <LI><a href="#[25e9360]">Default_Handler</a>
+ <LI><a href="#[256ea9c]">PWRWU_IRQHandler</a>
+ <LI><a href="#[1d8c2e8]">ADC_IRQHandler</a>
+ <LI><a href="#[25e9360]">Default_Handler</a>
+ <LI><a href="#[25e9360]">Default_Handler</a>
+ <LI><a href="#[1d90320]">main</a>
+ <LI><a href="#[25e957c]">SystemInit</a>
+ <LI><a href="#[25e26dc]">__main</a>
+ <LI><a href="#[25e7218]">EINT0callback</a>
+</UL>
+<P>
+<H3>
+Global Symbols
+</H3>
+<P><STRONG><a name="[25e26dc]"></a>__main</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry.o(.ARM.Collect$$$$00000000))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m051series.o(.text)
+</UL>
+<P><STRONG><a name="[25e1458]"></a>_main_stk</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry2.o(.ARM.Collect$$$$00000001))
+
+<P><STRONG><a name="[25e132c]"></a>_main_scatterload</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry5.o(.ARM.Collect$$$$00000004))
+<BR><BR>[Calls]<UL><LI><a href="#[25e10d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
+</UL>
+
+<P><STRONG><a name="[25e12f0]"></a>__main_after_scatterload</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry5.o(.ARM.Collect$$$$00000004))
+<BR><BR>[Called By]<UL><LI><a href="#[25e10d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
+</UL>
+
+<P><STRONG><a name="[25e1200]"></a>_main_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry7.o(.ARM.Collect$$$$00000007))
+
+<P><STRONG><a name="[25e91f8]"></a>Reset_Handler</STRONG> (Thumb, 38 bytes, Stack size 0 bytes, startup_m051series.o(.text))
+
+<P><STRONG><a name="[25e91bc]"></a>NMI_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_m051series.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[25e91bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NMI_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[25e91bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NMI_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_m051series.o(RESET)
+</UL>
+<P><STRONG><a name="[25e9180]"></a>HardFault_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_m051series.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[25e9180]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HardFault_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[25e9180]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HardFault_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_m051series.o(RESET)
+</UL>
+<P><STRONG><a name="[25e9144]"></a>SVC_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_m051series.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[25e9144]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SVC_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[25e9144]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SVC_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_m051series.o(RESET)
+</UL>
+<P><STRONG><a name="[25e9108]"></a>PendSV_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_m051series.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[25e9108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PendSV_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[25e9108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PendSV_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_m051series.o(RESET)
+</UL>
+<P><STRONG><a name="[25e90cc]"></a>SysTick_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_m051series.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[25e90cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[25e90cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_m051series.o(RESET)
+</UL>
+<P><STRONG><a name="[25e8dc0]"></a>SPI2_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m051series.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m051series.o(RESET)
+</UL>
+<P><STRONG><a name="[25e8d84]"></a>SPI3_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m051series.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m051series.o(RESET)
+</UL>
+<P><STRONG><a name="[25e240c]"></a>__aeabi_uidiv</STRONG> (Thumb, 0 bytes, Stack size 12 bytes, uidiv.o(.text), UNUSED)
+
+<P><STRONG><a name="[25e23d0]"></a>__aeabi_uidivmod</STRONG> (Thumb, 44 bytes, Stack size 12 bytes, uidiv.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = __aeabi_uidivmod
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1d8bb68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvSYS_GetPLLClockFreq
+<LI><a href="#[1d901b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvSYS_GetHCLKFreq
+<LI><a href="#[256ea24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemCoreClockUpdate
+<LI><a href="#[257809c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvPWM_SetTimerClk
+<LI><a href="#[25e22a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_idivmod
+<LI><a href="#[25ee7fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CalTimerInitValue
+</UL>
+
+<P><STRONG><a name="[25e22e0]"></a>__aeabi_idiv</STRONG> (Thumb, 0 bytes, Stack size 16 bytes, idiv.o(.text), UNUSED)
+
+<P><STRONG><a name="[25e22a4]"></a>__aeabi_idivmod</STRONG> (Thumb, 40 bytes, Stack size 16 bytes, idiv.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = __aeabi_idivmod &rArr; __aeabi_uidivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[25e23d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uidivmod
+</UL>
+<BR>[Called By]<UL><LI><a href="#[257809c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvPWM_SetTimerClk
+</UL>
+
+<P><STRONG><a name="[25e21b4]"></a>__aeabi_memcpy</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, memcpya.o(.text), UNUSED)
+
+<P><STRONG><a name="[25e2178]"></a>__aeabi_memcpy4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memcpya.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[25e5c4c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ListInsert
+<LI><a href="#[25e5c88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ListGet
+</UL>
+
+<P><STRONG><a name="[25e213c]"></a>__aeabi_memcpy8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memcpya.o(.text), UNUSED)
+
+<P><STRONG><a name="[25e10d4]"></a>__scatterload</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, init.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[25e12f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main_after_scatterload
+</UL>
+<BR>[Called By]<UL><LI><a href="#[25e132c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_main_scatterload
+</UL>
+
+<P><STRONG><a name="[25e1098]"></a>__scatterload_rt2</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, init.o(.text), UNUSED)
+
+<P><STRONG><a name="[1d8c2e8]"></a>ADC_IRQHandler</STRONG> (Thumb, 144 bytes, Stack size 8 bytes, drvadc.o(i.ADC_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = ADC_IRQHandler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_m051series.o(RESET)
+</UL>
+<P><STRONG><a name="[256f1e0]"></a>BOD_IRQHandler</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, drvsys.o(i.BOD_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = BOD_IRQHandler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_m051series.o(RESET)
+</UL>
+<P><STRONG><a name="[1d902e4]"></a>Check_Learn_Finsh</STRONG> (Thumb, 44 bytes, Stack size 0 bytes, ir.o(i.Check_Learn_Finsh))
+<BR><BR>[Called By]<UL><LI><a href="#[1d90320]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[1d902a8]"></a>Check_si4432</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, si4432.o(i.Check_si4432))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = Check_si4432 &rArr; spi_rw &rArr; DrvGPIO_SetBit
+</UL>
+<BR>[Calls]<UL><LI><a href="#[25e2e98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;su_fo
+<LI><a href="#[25e2ed4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_rw
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1d90320]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[1d898b8]"></a>DrvFMC_EnableISP</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, drvfmc.o(i.DrvFMC_EnableISP))
+<BR><BR>[Called By]<UL><LI><a href="#[1d8fc90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initFMC
+</UL>
+
+<P><STRONG><a name="[1d897c8]"></a>DrvFMC_Erase</STRONG> (Thumb, 106 bytes, Stack size 0 bytes, drvfmc.o(i.DrvFMC_Erase))
+<BR><BR>[Called By]<UL><LI><a href="#[25e5c10]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Erase_ISP_DATA_FLASH
+</UL>
+
+<P><STRONG><a name="[1d89714]"></a>DrvFMC_Read</STRONG> (Thumb, 114 bytes, Stack size 0 bytes, drvfmc.o(i.DrvFMC_Read))
+<BR><BR>[Called By]<UL><LI><a href="#[25e5b98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;read_ISP_DATA_FLASH
+</UL>
+
+<P><STRONG><a name="[1d8969c]"></a>DrvFMC_ReadUID</STRONG> (Thumb, 108 bytes, Stack size 0 bytes, drvfmc.o(i.DrvFMC_ReadUID))
+<BR><BR>[Called By]<UL><LI><a href="#[1d8fdf8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Read_UID_M0
+</UL>
+
+<P><STRONG><a name="[1d89660]"></a>DrvFMC_Write</STRONG> (Thumb, 108 bytes, Stack size 0 bytes, drvfmc.o(i.DrvFMC_Write))
+<BR><BR>[Called By]<UL><LI><a href="#[25e5b5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;write_ISP_DATA_FLASH
+</UL>
+
+<P><STRONG><a name="[1d9026c]"></a>DrvGPIO_ClrBit</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, drvgpio.o(i.DrvGPIO_ClrBit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = DrvGPIO_ClrBit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1d8fab0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;save_rec_data
+<LI><a href="#[1d8fb64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initsi4432
+<LI><a href="#[1d8fd08]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Send_IrCodeFlash
+<LI><a href="#[1d90320]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[25e2ed4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_rw
+<LI><a href="#[25e2f10]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_byte
+</UL>
+
+<P><STRONG><a name="[1d85d6c]"></a>DrvGPIO_DisableEINT</STRONG> (Thumb, 48 bytes, Stack size 16 bytes, drvgpio.o(i.DrvGPIO_DisableEINT))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = DrvGPIO_DisableEINT
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1d86168]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_DisableIRQ
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1d8fccc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Triget_Learn_state
+</UL>
+
+<P><STRONG><a name="[1d85c7c]"></a>DrvGPIO_EnableEINT</STRONG> (Thumb, 154 bytes, Stack size 40 bytes, drvgpio.o(i.DrvGPIO_EnableEINT))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = DrvGPIO_EnableEINT &rArr; NVIC_SetPriority
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1d860f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_SetPriority
+<LI><a href="#[1d8612c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_EnableIRQ
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1d8fc18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_IR_INTTRUPUT
+</UL>
+
+<P><STRONG><a name="[1d90230]"></a>DrvGPIO_GetBit</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, drvgpio.o(i.DrvGPIO_GetBit))
+<BR><BR>[Called By]<UL><LI><a href="#[1d8fab0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;save_rec_data
+<LI><a href="#[1d90320]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[25e2ed4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_rw
+<LI><a href="#[25e2f10]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_byte
+<LI><a href="#[25e7218]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EINT0callback
+</UL>
+
+<P><STRONG><a name="[1d85a24]"></a>DrvGPIO_InitFunction</STRONG> (Thumb, 634 bytes, Stack size 4 bytes, drvgpio.o(i.DrvGPIO_InitFunction))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = DrvGPIO_InitFunction &rArr; __ARM_common_switch8
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1d85790]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_switch8
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1d8fbdc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_PWM
+<LI><a href="#[1d8feac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvTIMER_Open
+</UL>
+
+<P><STRONG><a name="[1d859e8]"></a>DrvGPIO_Open</STRONG> (Thumb, 86 bytes, Stack size 16 bytes, drvgpio.o(i.DrvGPIO_Open))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = DrvGPIO_Open
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1d8fc54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initGPIO
+</UL>
+
+<P><STRONG><a name="[1d901f4]"></a>DrvGPIO_SetBit</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, drvgpio.o(i.DrvGPIO_SetBit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = DrvGPIO_SetBit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1d8fab0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;save_rec_data
+<LI><a href="#[1d8fd08]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Send_IrCodeFlash
+<LI><a href="#[1d90320]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[25e2ed4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_rw
+<LI><a href="#[25e2f10]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_byte
+</UL>
+
+<P><STRONG><a name="[257836c]"></a>DrvPWM_Enable</STRONG> (Thumb, 328 bytes, Stack size 8 bytes, drvpwm.o(i.DrvPWM_Enable))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = DrvPWM_Enable &rArr; __ARM_common_switch8
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1d85790]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_switch8
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1d8fbdc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_PWM
+<LI><a href="#[25e71a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Send_Ir_Code
+</UL>
+
+<P><STRONG><a name="[2578114]"></a>DrvPWM_Open</STRONG> (Thumb, 50 bytes, Stack size 0 bytes, drvpwm.o(i.DrvPWM_Open))
+<BR><BR>[Called By]<UL><LI><a href="#[1d8fbdc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_PWM
+</UL>
+
+<P><STRONG><a name="[25780d8]"></a>DrvPWM_SelectClockSource</STRONG> (Thumb, 124 bytes, Stack size 8 bytes, drvpwm.o(i.DrvPWM_SelectClockSource))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = DrvPWM_SelectClockSource &rArr; __ARM_common_switch8
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1d85790]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_switch8
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1d8fbdc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_PWM
+</UL>
+
+<P><STRONG><a name="[257809c]"></a>DrvPWM_SetTimerClk</STRONG> (Thumb, 1682 bytes, Stack size 56 bytes, drvpwm.o(i.DrvPWM_SetTimerClk))
+<BR><BR>[Stack]<UL><LI>Max Depth = 84<LI>Call Chain = DrvPWM_SetTimerClk &rArr; __aeabi_idivmod &rArr; __aeabi_uidivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1d85790]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_switch8
+<LI><a href="#[25e22a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_idivmod
+<LI><a href="#[25e23d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uidivmod
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1d8fbdc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_PWM
+</UL>
+
+<P><STRONG><a name="[2578024]"></a>DrvPWM_SetTimerIO</STRONG> (Thumb, 190 bytes, Stack size 8 bytes, drvpwm.o(i.DrvPWM_SetTimerIO))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = DrvPWM_SetTimerIO
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1d8fbdc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_PWM
+</UL>
+
+<P><STRONG><a name="[256f12c]"></a>DrvSYS_Delay</STRONG> (Thumb, 34 bytes, Stack size 0 bytes, drvsys.o(i.DrvSYS_Delay))
+<BR><BR>[Called By]<UL><LI><a href="#[1d8fa74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tx_data
+<LI><a href="#[1d8fb64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initsi4432
+</UL>
+
+<P><STRONG><a name="[256ee98]"></a>DrvSYS_GetExtClockFreq</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, drvsys.o(i.DrvSYS_GetExtClockFreq))
+<BR><BR>[Called By]<UL><LI><a href="#[25ee7c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetTimerClock
+</UL>
+
+<P><STRONG><a name="[1d901b8]"></a>DrvSYS_GetHCLKFreq</STRONG> (Thumb, 76 bytes, Stack size 16 bytes, drvsys.o(i.DrvSYS_GetHCLKFreq))
+<BR><BR>[Stack]<UL><LI>Max Depth = 60<LI>Call Chain = DrvSYS_GetHCLKFreq &rArr; DrvSYS_GetPLLClockFreq &rArr; __aeabi_uidivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1d8bb68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvSYS_GetPLLClockFreq
+<LI><a href="#[25e23d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uidivmod
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1d9035c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initsys
+<LI><a href="#[25ee7c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetTimerClock
+</UL>
+
+<P><STRONG><a name="[1d8bb68]"></a>DrvSYS_GetPLLClockFreq</STRONG> (Thumb, 104 bytes, Stack size 32 bytes, drvsys.o(i.DrvSYS_GetPLLClockFreq))
+<BR><BR>[Stack]<UL><LI>Max Depth = 44<LI>Call Chain = DrvSYS_GetPLLClockFreq &rArr; __aeabi_uidivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[25e23d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uidivmod
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1d901b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvSYS_GetHCLKFreq
+</UL>
+
+<P><STRONG><a name="[1d9017c]"></a>DrvSYS_LockProtectedReg</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, drvsys.o(i.DrvSYS_LockProtectedReg))
+<BR><BR>[Called By]<UL><LI><a href="#[1d8fc90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initFMC
+<LI><a href="#[1d8fdf8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Read_UID_M0
+<LI><a href="#[1d9035c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initsys
+<LI><a href="#[25e5b5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;write_ISP_DATA_FLASH
+<LI><a href="#[25e5b98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;read_ISP_DATA_FLASH
+<LI><a href="#[25e5c10]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Erase_ISP_DATA_FLASH
+</UL>
+
+<P><STRONG><a name="[1d90140]"></a>DrvSYS_SelectHCLKSource</STRONG> (Thumb, 80 bytes, Stack size 8 bytes, drvsys.o(i.DrvSYS_SelectHCLKSource))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = DrvSYS_SelectHCLKSource &rArr; SystemCoreClockUpdate &rArr; __aeabi_uidivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[256ea24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemCoreClockUpdate
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1d9035c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initsys
+</UL>
+
+<P><STRONG><a name="[1d90104]"></a>DrvSYS_SelectIPClockSource</STRONG> (Thumb, 320 bytes, Stack size 8 bytes, drvsys.o(i.DrvSYS_SelectIPClockSource))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = DrvSYS_SelectIPClockSource &rArr; __ARM_common_switch8
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1d85790]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_switch8
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1d90398]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initTMR0
+</UL>
+
+<P><STRONG><a name="[1d900c8]"></a>DrvSYS_SelectSysTickSource</STRONG> (Thumb, 38 bytes, Stack size 0 bytes, drvsys.o(i.DrvSYS_SelectSysTickSource))
+<BR><BR>[Called By]<UL><LI><a href="#[1d9035c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initsys
+</UL>
+
+<P><STRONG><a name="[1d9008c]"></a>DrvSYS_SetClockDivider</STRONG> (Thumb, 96 bytes, Stack size 8 bytes, drvsys.o(i.DrvSYS_SetClockDivider))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = DrvSYS_SetClockDivider
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1d9035c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initsys
+</UL>
+
+<P><STRONG><a name="[1d90050]"></a>DrvSYS_SetIPClock</STRONG> (Thumb, 88 bytes, Stack size 12 bytes, drvsys.o(i.DrvSYS_SetIPClock))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = DrvSYS_SetIPClock
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1d90398]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initTMR0
+</UL>
+
+<P><STRONG><a name="[1d90014]"></a>DrvSYS_SetOscCtrl</STRONG> (Thumb, 92 bytes, Stack size 8 bytes, drvsys.o(i.DrvSYS_SetOscCtrl))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = DrvSYS_SetOscCtrl
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1d9035c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initsys
+</UL>
+
+<P><STRONG><a name="[1d8ffd8]"></a>DrvSYS_UnlockProtectedReg</STRONG> (Thumb, 34 bytes, Stack size 0 bytes, drvsys.o(i.DrvSYS_UnlockProtectedReg))
+<BR><BR>[Called By]<UL><LI><a href="#[1d8fc90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initFMC
+<LI><a href="#[1d8fdf8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Read_UID_M0
+<LI><a href="#[1d9035c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initsys
+<LI><a href="#[25e5b5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;write_ISP_DATA_FLASH
+<LI><a href="#[25e5b98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;read_ISP_DATA_FLASH
+<LI><a href="#[25e5c10]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Erase_ISP_DATA_FLASH
+</UL>
+
+<P><STRONG><a name="[1d8ff9c]"></a>DrvTIMER_Close</STRONG> (Thumb, 168 bytes, Stack size 8 bytes, drvtimer.o(i.DrvTIMER_Close))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = DrvTIMER_Close &rArr; DrvTIMER_DisableInt
+</UL>
+<BR>[Calls]<UL><LI><a href="#[25ee004]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvTIMER_DisableInt
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1d8fd08]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Send_IrCodeFlash
+<LI><a href="#[1d90320]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[1d8ff60]"></a>DrvTIMER_Delay</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, drvtimer.o(i.DrvTIMER_Delay))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = DrvTIMER_Delay
+</UL>
+<BR>[Calls]<UL><LI><a href="#[25edf8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvTIMER_GetIntTicks
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1d8fd08]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Send_IrCodeFlash
+<LI><a href="#[1d90320]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[25e71a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Send_Ir_Code
+</UL>
+
+<P><STRONG><a name="[25ee004]"></a>DrvTIMER_DisableInt</STRONG> (Thumb, 64 bytes, Stack size 16 bytes, drvtimer.o(i.DrvTIMER_DisableInt))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = DrvTIMER_DisableInt
+</UL>
+<BR>[Calls]<UL><LI><a href="#[25ee784]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_DisableIRQ
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1d8ff9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvTIMER_Close
+</UL>
+
+<P><STRONG><a name="[1d8ff24]"></a>DrvTIMER_EnableInt</STRONG> (Thumb, 78 bytes, Stack size 16 bytes, drvtimer.o(i.DrvTIMER_EnableInt))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = DrvTIMER_EnableInt &rArr; NVIC_SetPriority
+</UL>
+<BR>[Calls]<UL><LI><a href="#[25ee70c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_SetPriority
+<LI><a href="#[25ee748]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_EnableIRQ
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1d90398]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initTMR0
+</UL>
+
+<P><STRONG><a name="[25edf8c]"></a>DrvTIMER_GetIntTicks</STRONG> (Thumb, 54 bytes, Stack size 0 bytes, drvtimer.o(i.DrvTIMER_GetIntTicks))
+<BR><BR>[Called By]<UL><LI><a href="#[1d8ff60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvTIMER_Delay
+</UL>
+
+<P><STRONG><a name="[1d8fee8]"></a>DrvTIMER_Init</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, drvtimer.o(i.DrvTIMER_Init))
+<BR><BR>[Called By]<UL><LI><a href="#[1d90398]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initTMR0
+</UL>
+
+<P><STRONG><a name="[1d8feac]"></a>DrvTIMER_Open</STRONG> (Thumb, 690 bytes, Stack size 32 bytes, drvtimer.o(i.DrvTIMER_Open))
+<BR><BR>[Stack]<UL><LI>Max Depth = 108<LI>Call Chain = DrvTIMER_Open &rArr; GetTimerClock &rArr; DrvSYS_GetHCLKFreq &rArr; DrvSYS_GetPLLClockFreq &rArr; __aeabi_uidivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1d85a24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvGPIO_InitFunction
+<LI><a href="#[25ee7c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetTimerClock
+<LI><a href="#[25ee7fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CalTimerInitValue
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1d90398]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initTMR0
+</UL>
+
+<P><STRONG><a name="[1d8fe70]"></a>DrvTIMER_Start</STRONG> (Thumb, 54 bytes, Stack size 0 bytes, drvtimer.o(i.DrvTIMER_Start))
+<BR><BR>[Called By]<UL><LI><a href="#[1d90398]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initTMR0
+</UL>
+
+<P><STRONG><a name="[1d85880]"></a>EINT0_IRQHandler</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, drvgpio.o(i.EINT0_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = EINT0_IRQHandler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_m051series.o(RESET)
+</UL>
+<P><STRONG><a name="[25e7218]"></a>EINT0callback</STRONG> (Thumb, 82 bytes, Stack size 8 bytes, ir.o(i.EINT0callback))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = EINT0callback
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1d90230]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvGPIO_GetBit
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> ir.o(i.init_IR_INTTRUPUT)
+</UL>
+<P><STRONG><a name="[1d85844]"></a>EINT1_IRQHandler</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, drvgpio.o(i.EINT1_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = EINT1_IRQHandler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_m051series.o(RESET)
+</UL>
+<P><STRONG><a name="[25e5c10]"></a>Erase_ISP_DATA_FLASH</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, fmc.o(i.Erase_ISP_DATA_FLASH))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = Erase_ISP_DATA_FLASH
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1d897c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvFMC_Erase
+<LI><a href="#[1d8ffd8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvSYS_UnlockProtectedReg
+<LI><a href="#[1d9017c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvSYS_LockProtectedReg
+</UL>
+<BR>[Called By]<UL><LI><a href="#[25e5c4c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ListInsert
+</UL>
+
+<P><STRONG><a name="[25e70ec]"></a>FindEmptyBlock</STRONG> (Thumb, 54 bytes, Stack size 0 bytes, flash_memory.o(i.FindEmptyBlock))
+<BR><BR>[Called By]<UL><LI><a href="#[1d8fd44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SaveIrCode2Flash
+</UL>
+
+<P><STRONG><a name="[25e5d3c]"></a>FindSpecifiedBlock</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, flash_memory.o(i.FindSpecifiedBlock))
+<BR><BR>[Called By]<UL><LI><a href="#[25e7074]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Mem_Flash_Get
+<LI><a href="#[25e70b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Malloc_Flash
+</UL>
+
+<P><STRONG><a name="[1d85808]"></a>GPIOP0P1_IRQHandler</STRONG> (Thumb, 42 bytes, Stack size 16 bytes, drvgpio.o(i.GPIOP0P1_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = GPIOP0P1_IRQHandler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_m051series.o(RESET)
+</UL>
+<P><STRONG><a name="[1d857cc]"></a>GPIOP2P3P4_IRQHandler</STRONG> (Thumb, 64 bytes, Stack size 16 bytes, drvgpio.o(i.GPIOP2P3P4_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = GPIOP2P3P4_IRQHandler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_m051series.o(RESET)
+</UL>
+<P><STRONG><a name="[1d830e4]"></a>I2C_IRQHandler</STRONG> (Thumb, 112 bytes, Stack size 8 bytes, drvi2c.o(i.I2C_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = I2C_IRQHandler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_m051series.o(RESET)
+</UL>
+<P><STRONG><a name="[25e5c88]"></a>ListGet</STRONG> (Thumb, 106 bytes, Stack size 40 bytes, flash_memory.o(i.ListGet))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = ListGet &rArr; read_ISP_DATA_FLASH
+</UL>
+<BR>[Calls]<UL><LI><a href="#[25e2178]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
+<LI><a href="#[25e5b98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;read_ISP_DATA_FLASH
+</UL>
+<BR>[Called By]<UL><LI><a href="#[25e7074]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Mem_Flash_Get
+</UL>
+
+<P><STRONG><a name="[25e5c4c]"></a>ListInsert</STRONG> (Thumb, 182 bytes, Stack size 56 bytes, flash_memory.o(i.ListInsert))
+<BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = ListInsert &rArr; write_ISP_DATA_FLASH
+</UL>
+<BR>[Calls]<UL><LI><a href="#[25e2178]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
+<LI><a href="#[25e5b5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;write_ISP_DATA_FLASH
+<LI><a href="#[25e5c10]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Erase_ISP_DATA_FLASH
+</UL>
+<BR>[Called By]<UL><LI><a href="#[25e70b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Malloc_Flash
+</UL>
+
+<P><STRONG><a name="[25e70b0]"></a>Malloc_Flash</STRONG> (Thumb, 34 bytes, Stack size 24 bytes, flash_memory.o(i.Malloc_Flash))
+<BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = Malloc_Flash &rArr; ListInsert &rArr; write_ISP_DATA_FLASH
+</UL>
+<BR>[Calls]<UL><LI><a href="#[25e5c4c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ListInsert
+<LI><a href="#[25e5d3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FindSpecifiedBlock
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1d8fd44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SaveIrCode2Flash
+</UL>
+
+<P><STRONG><a name="[25e7074]"></a>Mem_Flash_Get</STRONG> (Thumb, 24 bytes, Stack size 16 bytes, flash_memory.o(i.Mem_Flash_Get))
+<BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = Mem_Flash_Get &rArr; ListGet &rArr; read_ISP_DATA_FLASH
+</UL>
+<BR>[Calls]<UL><LI><a href="#[25e5c88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ListGet
+<LI><a href="#[25e5d3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FindSpecifiedBlock
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1d8fd08]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Send_IrCodeFlash
+</UL>
+
+<P><STRONG><a name="[2577fe8]"></a>PWMA_IRQHandler</STRONG> (Thumb, 244 bytes, Stack size 16 bytes, drvpwm.o(i.PWMA_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = PWMA_IRQHandler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_m051series.o(RESET)
+</UL>
+<P><STRONG><a name="[2577fac]"></a>PWMB_IRQHandler</STRONG> (Thumb, 244 bytes, Stack size 16 bytes, drvpwm.o(i.PWMB_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = PWMB_IRQHandler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_m051series.o(RESET)
+</UL>
+<P><STRONG><a name="[256ea9c]"></a>PWRWU_IRQHandler</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, drvsys.o(i.PWRWU_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = PWRWU_IRQHandler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_m051series.o(RESET)
+</UL>
+<P><STRONG><a name="[25e30f0]"></a>RE_RSSI</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, si4432.o(i.RE_RSSI))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = RE_RSSI &rArr; spi_rw &rArr; DrvGPIO_SetBit
+</UL>
+<BR>[Calls]<UL><LI><a href="#[25e2ed4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_rw
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1d8fab0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;save_rec_data
+</UL>
+
+<P><STRONG><a name="[1d8fdf8]"></a>Read_UID_M0</STRONG> (Thumb, 26 bytes, Stack size 16 bytes, fmc.o(i.Read_UID_M0))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = Read_UID_M0
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1d8969c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvFMC_ReadUID
+<LI><a href="#[1d8ffd8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvSYS_UnlockProtectedReg
+<LI><a href="#[1d9017c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvSYS_LockProtectedReg
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1d90320]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[1d8fdbc]"></a>RecvCmdFromSI4432</STRONG> (Thumb, 116 bytes, Stack size 32 bytes, si4432_proto.o(i.RecvCmdFromSI4432))
+<BR><BR>[Stack]<UL><LI>Max Depth = 164<LI>Call Chain = RecvCmdFromSI4432 &rArr; Send_IrCodeFlash &rArr; initTMR0 &rArr; DrvTIMER_Open &rArr; GetTimerClock &rArr; DrvSYS_GetHCLKFreq &rArr; DrvSYS_GetPLLClockFreq &rArr; __aeabi_uidivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1d8fa74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tx_data
+<LI><a href="#[1d8fd08]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Send_IrCodeFlash
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1d90320]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[1d8fd80]"></a>Reset_Finsh</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, ir.o(i.Reset_Finsh))
+<BR><BR>[Called By]<UL><LI><a href="#[1d90320]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[25e30b4]"></a>SI4432_init</STRONG> (Thumb, 408 bytes, Stack size 8 bytes, si4432.o(i.SI4432_init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = SI4432_init &rArr; clr_interruput_si4432 &rArr; spi_rw &rArr; DrvGPIO_SetBit
+</UL>
+<BR>[Calls]<UL><LI><a href="#[25e2ed4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_rw
+<LI><a href="#[25e2fc4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clr_interruput_si4432
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1d8fa74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tx_data
+<LI><a href="#[1d8fb64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initsi4432
+</UL>
+
+<P><STRONG><a name="[25734ac]"></a>SPI0_IRQHandler</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, drvspi.o(i.SPI0_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = SPI0_IRQHandler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_m051series.o(RESET)
+</UL>
+<P><STRONG><a name="[2573470]"></a>SPI1_IRQHandler</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, drvspi.o(i.SPI1_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = SPI1_IRQHandler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_m051series.o(RESET)
+</UL>
+<P><STRONG><a name="[1d8fd44]"></a>SaveIrCode2Flash</STRONG> (Thumb, 30 bytes, Stack size 24 bytes, ir.o(i.SaveIrCode2Flash))
+<BR><BR>[Stack]<UL><LI>Max Depth = 140<LI>Call Chain = SaveIrCode2Flash &rArr; initTMR0 &rArr; DrvTIMER_Open &rArr; GetTimerClock &rArr; DrvSYS_GetHCLKFreq &rArr; DrvSYS_GetPLLClockFreq &rArr; __aeabi_uidivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1d90398]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initTMR0
+<LI><a href="#[25e70b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Malloc_Flash
+<LI><a href="#[25e70ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FindEmptyBlock
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1d90320]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[1d8fd08]"></a>Send_IrCodeFlash</STRONG> (Thumb, 78 bytes, Stack size 16 bytes, ir.o(i.Send_IrCodeFlash))
+<BR><BR>[Stack]<UL><LI>Max Depth = 132<LI>Call Chain = Send_IrCodeFlash &rArr; initTMR0 &rArr; DrvTIMER_Open &rArr; GetTimerClock &rArr; DrvSYS_GetHCLKFreq &rArr; DrvSYS_GetPLLClockFreq &rArr; __aeabi_uidivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1d8ff60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvTIMER_Delay
+<LI><a href="#[1d8ff9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvTIMER_Close
+<LI><a href="#[1d901f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvGPIO_SetBit
+<LI><a href="#[1d9026c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvGPIO_ClrBit
+<LI><a href="#[1d90398]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initTMR0
+<LI><a href="#[25e7074]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Mem_Flash_Get
+<LI><a href="#[25e71a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Send_Ir_Code
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1d8fdbc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RecvCmdFromSI4432
+<LI><a href="#[1d90320]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[25e71a0]"></a>Send_Ir_Code</STRONG> (Thumb, 128 bytes, Stack size 24 bytes, ir.o(i.Send_Ir_Code))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = Send_Ir_Code &rArr; DrvPWM_Enable &rArr; __ARM_common_switch8
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1d8ff60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvTIMER_Delay
+<LI><a href="#[257836c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvPWM_Enable
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1d8fd08]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Send_IrCodeFlash
+</UL>
+
+<P><STRONG><a name="[256ea24]"></a>SystemCoreClockUpdate</STRONG> (Thumb, 130 bytes, Stack size 16 bytes, system_m051series.o(i.SystemCoreClockUpdate))
+<BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = SystemCoreClockUpdate &rArr; __aeabi_uidivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[25e23d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uidivmod
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1d90140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvSYS_SelectHCLKSource
+</UL>
+
+<P><STRONG><a name="[25e957c]"></a>SystemInit</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, system_m051series.o(i.SystemInit))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m051series.o(.text)
+</UL>
+<P><STRONG><a name="[25eddac]"></a>TMR0_IRQHandler</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, drvtimer.o(i.TMR0_IRQHandler))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m051series.o(RESET)
+</UL>
+<P><STRONG><a name="[25edd70]"></a>TMR1_IRQHandler</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, drvtimer.o(i.TMR1_IRQHandler))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m051series.o(RESET)
+</UL>
+<P><STRONG><a name="[25edd34]"></a>TMR2_IRQHandler</STRONG> (Thumb, 132 bytes, Stack size 8 bytes, drvtimer.o(i.TMR2_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = TMR2_IRQHandler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_m051series.o(RESET)
+</UL>
+<P><STRONG><a name="[25edcf8]"></a>TMR3_IRQHandler</STRONG> (Thumb, 70 bytes, Stack size 8 bytes, drvtimer.o(i.TMR3_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = TMR3_IRQHandler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_m051series.o(RESET)
+</UL>
+<P><STRONG><a name="[1d8fccc]"></a>Triget_Learn_state</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, ir.o(i.Triget_Learn_state))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = Triget_Learn_state &rArr; init_IR_INTTRUPUT &rArr; DrvGPIO_EnableEINT &rArr; NVIC_SetPriority
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1d85d6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvGPIO_DisableEINT
+<LI><a href="#[1d8fc18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_IR_INTTRUPUT
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1d90320]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[25eb598]"></a>UART0_IRQHandler</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, drvuart.o(i.UART0_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = UART0_IRQHandler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_m051series.o(RESET)
+</UL>
+<P><STRONG><a name="[25eb55c]"></a>UART1_IRQHandler</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, drvuart.o(i.UART1_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = UART1_IRQHandler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_m051series.o(RESET)
+</UL>
+<P><STRONG><a name="[25edcbc]"></a>WDT_IRQHandler</STRONG> (Thumb, 42 bytes, Stack size 8 bytes, drvtimer.o(i.WDT_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = WDT_IRQHandler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_m051series.o(RESET)
+</UL>
+<P><STRONG><a name="[1d85790]"></a>__ARM_common_switch8</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, drvgpio.o(i.__ARM_common_switch8))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = __ARM_common_switch8
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1d85a24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvGPIO_InitFunction
+<LI><a href="#[1d90104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvSYS_SelectIPClockSource
+<LI><a href="#[257809c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvPWM_SetTimerClk
+<LI><a href="#[25780d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvPWM_SelectClockSource
+<LI><a href="#[257836c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvPWM_Enable
+</UL>
+
+<P><STRONG><a name="[25e0cd8]"></a>__scatterload_copy</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_copy), UNUSED)
+
+<P><STRONG><a name="[25e0c9c]"></a>__scatterload_null</STRONG> (Thumb, 2 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_null), UNUSED)
+
+<P><STRONG><a name="[25e0c60]"></a>__scatterload_zeroinit</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_zeroinit), UNUSED)
+
+<P><STRONG><a name="[25e2fc4]"></a>clr_interruput_si4432</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, si4432.o(i.clr_interruput_si4432))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = clr_interruput_si4432 &rArr; spi_rw &rArr; DrvGPIO_SetBit
+</UL>
+<BR>[Calls]<UL><LI><a href="#[25e2ed4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_rw
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1d8fab0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;save_rec_data
+<LI><a href="#[25e30b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SI4432_init
+</UL>
+
+<P><STRONG><a name="[1d8fc90]"></a>initFMC</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, fmc.o(i.initFMC))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = initFMC
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1d898b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvFMC_EnableISP
+<LI><a href="#[1d8ffd8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvSYS_UnlockProtectedReg
+<LI><a href="#[1d9017c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvSYS_LockProtectedReg
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1d90320]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[1d8fc54]"></a>initGPIO</STRONG> (Thumb, 124 bytes, Stack size 8 bytes, gpio.o(i.initGPIO))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = initGPIO &rArr; DrvGPIO_Open
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1d859e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvGPIO_Open
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1d90320]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[1d90398]"></a>initTMR0</STRONG> (Thumb, 46 bytes, Stack size 8 bytes, main.o(i.initTMR0))
+<BR><BR>[Stack]<UL><LI>Max Depth = 116<LI>Call Chain = initTMR0 &rArr; DrvTIMER_Open &rArr; GetTimerClock &rArr; DrvSYS_GetHCLKFreq &rArr; DrvSYS_GetPLLClockFreq &rArr; __aeabi_uidivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1d8fe70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvTIMER_Start
+<LI><a href="#[1d8feac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvTIMER_Open
+<LI><a href="#[1d8fee8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvTIMER_Init
+<LI><a href="#[1d8ff24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvTIMER_EnableInt
+<LI><a href="#[1d90050]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvSYS_SetIPClock
+<LI><a href="#[1d90104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvSYS_SelectIPClockSource
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1d8fd08]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Send_IrCodeFlash
+<LI><a href="#[1d8fd44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SaveIrCode2Flash
+<LI><a href="#[1d90320]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[1d8fc18]"></a>init_IR_INTTRUPUT</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, ir.o(i.init_IR_INTTRUPUT))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = init_IR_INTTRUPUT &rArr; DrvGPIO_EnableEINT &rArr; NVIC_SetPriority
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1d85c7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvGPIO_EnableEINT
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1d8fccc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Triget_Learn_state
+<LI><a href="#[1d90320]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[1d8fbdc]"></a>init_PWM</STRONG> (Thumb, 64 bytes, Stack size 24 bytes, ir.o(i.init_PWM))
+<BR><BR>[Stack]<UL><LI>Max Depth = 108<LI>Call Chain = init_PWM &rArr; DrvPWM_SetTimerClk &rArr; __aeabi_idivmod &rArr; __aeabi_uidivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1d85a24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvGPIO_InitFunction
+<LI><a href="#[2578024]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvPWM_SetTimerIO
+<LI><a href="#[257809c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvPWM_SetTimerClk
+<LI><a href="#[25780d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvPWM_SelectClockSource
+<LI><a href="#[2578114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvPWM_Open
+<LI><a href="#[257836c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvPWM_Enable
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1d90320]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[1d8fba0]"></a>init_flash_pool</STRONG> (Thumb, 114 bytes, Stack size 0 bytes, flash_memory.o(i.init_flash_pool))
+<BR><BR>[Called By]<UL><LI><a href="#[1d90320]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[1d8fb64]"></a>initsi4432</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, si4432.o(i.initsi4432))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = initsi4432 &rArr; SI4432_init &rArr; clr_interruput_si4432 &rArr; spi_rw &rArr; DrvGPIO_SetBit
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1d9026c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvGPIO_ClrBit
+<LI><a href="#[256f12c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvSYS_Delay
+<LI><a href="#[25e2ed4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_rw
+<LI><a href="#[25e30b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SI4432_init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1d90320]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[1d9035c]"></a>initsys</STRONG> (Thumb, 70 bytes, Stack size 16 bytes, main.o(i.initsys))
+<BR><BR>[Stack]<UL><LI>Max Depth = 76<LI>Call Chain = initsys &rArr; DrvSYS_GetHCLKFreq &rArr; DrvSYS_GetPLLClockFreq &rArr; __aeabi_uidivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1d8ffd8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvSYS_UnlockProtectedReg
+<LI><a href="#[1d90014]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvSYS_SetOscCtrl
+<LI><a href="#[1d9008c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvSYS_SetClockDivider
+<LI><a href="#[1d900c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvSYS_SelectSysTickSource
+<LI><a href="#[1d90140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvSYS_SelectHCLKSource
+<LI><a href="#[1d9017c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvSYS_LockProtectedReg
+<LI><a href="#[1d901b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvSYS_GetHCLKFreq
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1d90320]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[1d90320]"></a>main</STRONG> (Thumb, 402 bytes, Stack size 16 bytes, main.o(i.main))
+<BR><BR>[Stack]<UL><LI>Max Depth = 180<LI>Call Chain = main &rArr; RecvCmdFromSI4432 &rArr; Send_IrCodeFlash &rArr; initTMR0 &rArr; DrvTIMER_Open &rArr; GetTimerClock &rArr; DrvSYS_GetHCLKFreq &rArr; DrvSYS_GetPLLClockFreq &rArr; __aeabi_uidivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1d8fa74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tx_data
+<LI><a href="#[1d8fab0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;save_rec_data
+<LI><a href="#[1d8faec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rx_data
+<LI><a href="#[1d8fb64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initsi4432
+<LI><a href="#[1d8fba0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_flash_pool
+<LI><a href="#[1d8fbdc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_PWM
+<LI><a href="#[1d8fc18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_IR_INTTRUPUT
+<LI><a href="#[1d8fc54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initGPIO
+<LI><a href="#[1d8fc90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initFMC
+<LI><a href="#[1d8fccc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Triget_Learn_state
+<LI><a href="#[1d8fd08]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Send_IrCodeFlash
+<LI><a href="#[1d8fd44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SaveIrCode2Flash
+<LI><a href="#[1d8fd80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Reset_Finsh
+<LI><a href="#[1d8fdbc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RecvCmdFromSI4432
+<LI><a href="#[1d8fdf8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Read_UID_M0
+<LI><a href="#[1d8ff60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvTIMER_Delay
+<LI><a href="#[1d8ff9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvTIMER_Close
+<LI><a href="#[1d901f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvGPIO_SetBit
+<LI><a href="#[1d90230]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvGPIO_GetBit
+<LI><a href="#[1d9026c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvGPIO_ClrBit
+<LI><a href="#[1d902a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Check_si4432
+<LI><a href="#[1d902e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Check_Learn_Finsh
+<LI><a href="#[1d9035c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initsys
+<LI><a href="#[1d90398]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initTMR0
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> entry7.o(.ARM.Collect$$$$00000007)
+</UL>
+<P><STRONG><a name="[25e5b98]"></a>read_ISP_DATA_FLASH</STRONG> (Thumb, 24 bytes, Stack size 16 bytes, fmc.o(i.read_ISP_DATA_FLASH))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = read_ISP_DATA_FLASH
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1d89714]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvFMC_Read
+<LI><a href="#[1d8ffd8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvSYS_UnlockProtectedReg
+<LI><a href="#[1d9017c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvSYS_LockProtectedReg
+</UL>
+<BR>[Called By]<UL><LI><a href="#[25e5c88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ListGet
+</UL>
+
+<P><STRONG><a name="[1d8faec]"></a>rx_data</STRONG> (Thumb, 84 bytes, Stack size 8 bytes, si4432.o(i.rx_data))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = rx_data &rArr; spi_rw &rArr; DrvGPIO_SetBit
+</UL>
+<BR>[Calls]<UL><LI><a href="#[25e2ed4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_rw
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1d8fa74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tx_data
+<LI><a href="#[1d8fab0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;save_rec_data
+<LI><a href="#[1d90320]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[1d8fab0]"></a>save_rec_data</STRONG> (Thumb, 122 bytes, Stack size 16 bytes, si4432.o(i.save_rec_data))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = save_rec_data &rArr; rx_data &rArr; spi_rw &rArr; DrvGPIO_SetBit
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1d8faec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rx_data
+<LI><a href="#[1d901f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvGPIO_SetBit
+<LI><a href="#[1d90230]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvGPIO_GetBit
+<LI><a href="#[1d9026c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvGPIO_ClrBit
+<LI><a href="#[25e2ed4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_rw
+<LI><a href="#[25e2f10]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_byte
+<LI><a href="#[25e2fc4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clr_interruput_si4432
+<LI><a href="#[25e30f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RE_RSSI
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1d90320]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[25e2f10]"></a>spi_byte</STRONG> (Thumb, 86 bytes, Stack size 16 bytes, si4432.o(i.spi_byte))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = spi_byte &rArr; DrvGPIO_SetBit
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1d901f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvGPIO_SetBit
+<LI><a href="#[1d90230]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvGPIO_GetBit
+<LI><a href="#[1d9026c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvGPIO_ClrBit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1d8fab0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;save_rec_data
+</UL>
+
+<P><STRONG><a name="[25e2ed4]"></a>spi_rw</STRONG> (Thumb, 176 bytes, Stack size 16 bytes, si4432.o(i.spi_rw))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = spi_rw &rArr; DrvGPIO_SetBit
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1d901f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvGPIO_SetBit
+<LI><a href="#[1d90230]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvGPIO_GetBit
+<LI><a href="#[1d9026c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvGPIO_ClrBit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1d8fa74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tx_data
+<LI><a href="#[1d8fab0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;save_rec_data
+<LI><a href="#[1d8faec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rx_data
+<LI><a href="#[1d8fb64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initsi4432
+<LI><a href="#[1d902a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Check_si4432
+<LI><a href="#[25e2fc4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clr_interruput_si4432
+<LI><a href="#[25e30b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SI4432_init
+<LI><a href="#[25e30f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RE_RSSI
+</UL>
+
+<P><STRONG><a name="[25e2e98]"></a>su_fo</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, si4432.o(i.su_fo))
+<BR><BR>[Called By]<UL><LI><a href="#[1d902a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Check_si4432
+</UL>
+
+<P><STRONG><a name="[1d8fa74]"></a>tx_data</STRONG> (Thumb, 262 bytes, Stack size 40 bytes, si4432.o(i.tx_data))
+<BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = tx_data &rArr; SI4432_init &rArr; clr_interruput_si4432 &rArr; spi_rw &rArr; DrvGPIO_SetBit
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1d8faec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rx_data
+<LI><a href="#[256f12c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvSYS_Delay
+<LI><a href="#[25e2ed4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_rw
+<LI><a href="#[25e30b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SI4432_init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1d8fdbc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RecvCmdFromSI4432
+<LI><a href="#[1d90320]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[25e5b5c]"></a>write_ISP_DATA_FLASH</STRONG> (Thumb, 24 bytes, Stack size 16 bytes, fmc.o(i.write_ISP_DATA_FLASH))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = write_ISP_DATA_FLASH
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1d89660]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvFMC_Write
+<LI><a href="#[1d8ffd8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvSYS_UnlockProtectedReg
+<LI><a href="#[1d9017c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvSYS_LockProtectedReg
+</UL>
+<BR>[Called By]<UL><LI><a href="#[25e5c4c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ListInsert
+</UL>
+<P>
+<H3>
+Local Symbols
+</H3>
+<P><STRONG><a name="[1d86168]"></a>NVIC_DisableIRQ</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, drvgpio.o(i.NVIC_DisableIRQ))
+<BR><BR>[Called By]<UL><LI><a href="#[1d85d6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvGPIO_DisableEINT
+</UL>
+
+<P><STRONG><a name="[1d8612c]"></a>NVIC_EnableIRQ</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, drvgpio.o(i.NVIC_EnableIRQ))
+<BR><BR>[Called By]<UL><LI><a href="#[1d85c7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvGPIO_EnableEINT
+</UL>
+
+<P><STRONG><a name="[1d860f0]"></a>NVIC_SetPriority</STRONG> (Thumb, 110 bytes, Stack size 8 bytes, drvgpio.o(i.NVIC_SetPriority))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = NVIC_SetPriority
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1d85c7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvGPIO_EnableEINT
+</UL>
+
+<P><STRONG><a name="[25ee7fc]"></a>CalTimerInitValue</STRONG> (Thumb, 70 bytes, Stack size 24 bytes, drvtimer.o(i.CalTimerInitValue))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = CalTimerInitValue &rArr; __aeabi_uidivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[25e23d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uidivmod
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1d8feac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvTIMER_Open
+</UL>
+
+<P><STRONG><a name="[25ee7c0]"></a>GetTimerClock</STRONG> (Thumb, 82 bytes, Stack size 16 bytes, drvtimer.o(i.GetTimerClock))
+<BR><BR>[Stack]<UL><LI>Max Depth = 76<LI>Call Chain = GetTimerClock &rArr; DrvSYS_GetHCLKFreq &rArr; DrvSYS_GetPLLClockFreq &rArr; __aeabi_uidivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1d901b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvSYS_GetHCLKFreq
+<LI><a href="#[256ee98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvSYS_GetExtClockFreq
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1d8feac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvTIMER_Open
+</UL>
+
+<P><STRONG><a name="[25ee784]"></a>NVIC_DisableIRQ</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, drvtimer.o(i.NVIC_DisableIRQ))
+<BR><BR>[Called By]<UL><LI><a href="#[25ee004]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvTIMER_DisableInt
+</UL>
+
+<P><STRONG><a name="[25ee748]"></a>NVIC_EnableIRQ</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, drvtimer.o(i.NVIC_EnableIRQ))
+<BR><BR>[Called By]<UL><LI><a href="#[1d8ff24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvTIMER_EnableInt
+</UL>
+
+<P><STRONG><a name="[25ee70c]"></a>NVIC_SetPriority</STRONG> (Thumb, 110 bytes, Stack size 8 bytes, drvtimer.o(i.NVIC_SetPriority))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = NVIC_SetPriority
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1d8ff24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvTIMER_EnableInt
+</UL>
+
+<P><STRONG><a name="[25e9360]"></a>Default_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_m051series.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[25e9360]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Default_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[25e9360]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Default_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_m051series.o(RESET)
+</UL><P>
+<H3>
+Undefined Global Symbols
+</H3><HR></body></html>

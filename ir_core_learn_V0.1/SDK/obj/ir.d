@@ -1,0 +1,17 @@
+.\obj\ir.o: ..\红外\ir.c
+.\obj\ir.o: ..\CMSIS\CM0\DeviceSupport\Nuvoton\M051Series\M051Series.h
+.\obj\ir.o: ..\CMSIS\CM0\CoreSupport\core_cm0.h
+.\obj\ir.o: C:\Keil\ARM\RV31\INC\stdint.h
+.\obj\ir.o: ..\CMSIS\CM0\DeviceSupport\Nuvoton\M051Series\system_M051Series.h
+.\obj\ir.o: ..\Include\SysInfra.h
+.\obj\ir.o: ..\Include\ModuleID.h
+.\obj\ir.o: ..\Include\DrvSYS.h
+.\obj\ir.o: ..\Include\M051Series.h
+.\obj\ir.o: ..\Include\DrvGPIO.h
+.\obj\ir.o: ..\MAIN\main.h
+.\obj\ir.o: ..\GPIO\GPIO.h
+.\obj\ir.o: ..\Include\DrvTIMER.h
+.\obj\ir.o: ..\Include\DrvPWM.h
+.\obj\ir.o: ..\红外\ir.h
+.\obj\ir.o: ..\红外\queue.h
+.\obj\ir.o: ..\红外\Flash_Memory.h

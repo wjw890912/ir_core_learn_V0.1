@@ -1,0 +1,16 @@
+.\obj\si4432_proto.o: ..\SI4432Protocol\SI4432_proto.c
+.\obj\si4432_proto.o: ..\SI4432Protocol\SI4432_proto.h
+.\obj\si4432_proto.o: C:\Keil\ARM\RV31\INC\string.h
+.\obj\si4432_proto.o: ..\SI4432_Driver\SI4432.H
+.\obj\si4432_proto.o: C:\Keil\ARM\RV31\INC\stdio.h
+.\obj\si4432_proto.o: ..\CMSIS\CM0\DeviceSupport\Nuvoton\M051Series\M051Series.h
+.\obj\si4432_proto.o: ..\CMSIS\CM0\CoreSupport\core_cm0.h
+.\obj\si4432_proto.o: C:\Keil\ARM\RV31\INC\stdint.h
+.\obj\si4432_proto.o: ..\CMSIS\CM0\DeviceSupport\Nuvoton\M051Series\system_M051Series.h
+.\obj\si4432_proto.o: ..\Include\SysInfra.h
+.\obj\si4432_proto.o: ..\Include\ModuleID.h
+.\obj\si4432_proto.o: ..\Include\DrvSYS.h
+.\obj\si4432_proto.o: ..\Include\M051Series.h
+.\obj\si4432_proto.o: ..\Include\DrvGPIO.h
+.\obj\si4432_proto.o: ..\GPIO\GPIO.h
+.\obj\si4432_proto.o: ..\FMC\FMC.H

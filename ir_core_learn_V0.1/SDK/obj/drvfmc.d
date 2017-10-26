@@ -1,0 +1,9 @@
+.\obj\drvfmc.o: ..\Lib\DrvFMC.c
+.\obj\drvfmc.o: C:\Keil\ARM\RV31\INC\stdio.h
+.\obj\drvfmc.o: ..\Include\DrvFMC.h
+.\obj\drvfmc.o: ..\Include\M051Series.h
+.\obj\drvfmc.o: ..\CMSIS\CM0\CoreSupport\core_cm0.h
+.\obj\drvfmc.o: C:\Keil\ARM\RV31\INC\stdint.h
+.\obj\drvfmc.o: ..\CMSIS\CM0\DeviceSupport\Nuvoton\M051Series\system_M051Series.h
+.\obj\drvfmc.o: ..\Include\SysInfra.h
+.\obj\drvfmc.o: ..\Include\ModuleID.h
